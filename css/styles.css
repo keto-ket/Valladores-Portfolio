@@ -11556,7 +11556,7 @@ html {
 
 .bg-gradient-primary-to-secondary {
   background: #1B1D1E;
-  background: linear-gradient(220deg, #446DF6 0%, #1B1D1E 70%);
+  background: linear-gradient(229deg, #446DF6 16%, #1B1D1E 70%);
 }
 
 .text-gradient {
@@ -11582,13 +11582,13 @@ html {
   position: relative;
   height: 75vw;
   width: 75vw;
-  border-radius: 2vw;
+  border-radius: 7vw 1vw;
   margin-top: 5vw;
   max-height: 40rem;
   max-width: 40rem;
 }
 .profile .profile-img {
-  height: 80vw;
+  height: 92vw;
   max-height: 45rem;
   position: absolute;
   bottom: 0;
@@ -11638,7 +11638,7 @@ html {
     width: 60vw;
   }
   .profile .profile-img {
-    height: 65vw;
+    height: 72vw;
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11663,7 +11663,7 @@ html {
     width: 50vw;
   }
   .profile .profile-img {
-    height: 55vw;
+    height: 59vw;
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11688,7 +11688,7 @@ html {
     width: 40vw;
   }
   .profile .profile-img {
-    height: 45vw;
+    height: 47vw;
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11713,7 +11713,7 @@ html {
     width: 35vw;
   }
   .profile .profile-img {
-    height: 40vw;
+    height: 42vw;
   }
   .profile .dots-1 {
     width: 1.5vw;
