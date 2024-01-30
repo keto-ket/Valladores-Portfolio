@@ -599,7 +599,13 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height:300px;
+}
+@media (min-width: 767px){
+  .img-fluid {
+    max-width: 300px;
+    height: auto;
+  }
 }
 
 .img-thumbnail {
@@ -7027,6 +7033,8 @@ textarea.form-control-lg {
   display: flex !important;
 }
 
+
+
 .d-inline-flex {
   display: inline-flex !important;
 }
@@ -11556,7 +11564,7 @@ html {
 
 .bg-gradient-primary-to-secondary {
   background: #1B1D1E;
-  background: linear-gradient(229deg, #446DF6 16%, #1B1D1E 70%);
+  background: linear-gradient(229deg, #00aeef 16%, #2d388a 70%)
 }
 
 .text-gradient {
@@ -11589,7 +11597,7 @@ html {
 }
 .profile .profile-img {
   height: 92vw;
-  max-height: 45rem;
+  max-height: 49rem;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -11731,4 +11739,13 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+.try{
+  flex-direction: column-reverse !important;
+}
+@media (min-width: 767px) {
+  .try{
+    flex-direction: row !important;
+  }
+  
 }
