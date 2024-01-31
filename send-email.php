@@ -1,9 +1,10 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-require 'path/to/PHPMailer/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/Exception.php';
+require 'PHPMailer-6.9.1/src/PHPMailer.php';
+require 'PHPMailer-6.9.1/src/Exception.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -21,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'tuvalladores@gmail.com'; // Gmail email address
-        $mail->Password   = 'ansarapmo';
+        $mail->Password   = 'kwgc uhtq tntn ljvf';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
