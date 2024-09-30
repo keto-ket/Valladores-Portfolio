@@ -39,3 +39,11 @@
     opacity: 1;
 }
 
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+  
+.js-scroll.scrolled {
+    opacity: 1;
+}
