@@ -40,6 +40,41 @@ function fadeInElementsByClass(className) {
         fadeinelements[i].classList.add('visible');
     }
 }
+const scrollElements = document.querySelectorAll(".js-scroll");
+
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 1.25)) {
+        displayScrollElement(el);
+      } else if (elementOutofView(el)) {
+        hideScrollElement(el)
+      }
+    })
+  }
 // Call the function to slide in elements with class 'appear' when the page is loaded
 window.onload = function() {
     slideInElementsByClass('slide-in');
@@ -47,3 +82,7 @@ window.onload = function() {
     slideDownElementsByClass('slide-down');
     slideUpElementsByClass('slide-up');
 };
+
+window.addEventListener("scroll", () => { 
+    handleScrollAnimation();
+  });
